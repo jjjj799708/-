@@ -72,6 +72,9 @@
     .links a:hover {
       background-color: #e35b30;
     }
+    img {
+      margin-top: 10px;
+    }
     footer {
       margin-top: 30px;
       background-color: #0078d7;
@@ -96,12 +99,13 @@
     <button onclick="scrollToSection('video')">🎬 喜愛的影片</button>
     <button onclick="scrollToSection('chart')">📊 統計圖表</button>
     <button onclick="scrollToSection('friends')">🌐 同學的網站</button>
+    <button onclick="scrollToSection('favorite-image')">🌟 最愛圖片</button>
   </nav>
 
   <!-- 本地影片區 -->
-   <section id="video" class="active">
-    <h2>我最喜歡的影片</h2>
-    <video width="640" height="360" controls>
+  <section id="video">
+    <h2>🎬 我最喜歡的影片</h2>
+    <video controls>
       <source src="videoplayback.mp4" type="video/mp4">
       您的瀏覽器不支援影片播放。
     </video>
@@ -121,6 +125,15 @@
       <a href="https://z74651825-source.github.io/my-website/" target="_blank">同學2：my website</a>
       <a href="https://momo20031013-afk.github.io/zhoushen-momo/" target="_blank">同學3：zhoushen momo</a>
     </div>
+  </section>
+
+  <!-- 最愛圖片區 -->
+  <section id="favorite-image">
+    <h2>🌟 我的最愛圖片</h2>
+    <picture>
+      <source srcset="images/favorite.jpg.avif" type="image/avif">
+      <img src="images/favorite.jpg" alt="最喜愛的圖片" style="width:80%; max-width:600px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+    </picture>
   </section>
 
   <!-- 頁尾 -->
@@ -157,3 +170,6 @@
 
 </body>
 </html>
+
+
+
